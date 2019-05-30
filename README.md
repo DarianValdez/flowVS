@@ -13,4 +13,22 @@ Converts a title insurance workflow from ResWare's db into Graphviz's dot langua
 
 ## Develop
 
+1. Install GraphViz
+1. Update DOT_EXE_PATH in settings.py to point to dot.exe int the Graph Viz installation folder:
+  
+    DOT_EXE_PATH = 'C:\\\\Program Files (x86)\\\\Graphviz2.38\\\\bin\\\\dot.exe'
+1. Set variables in the .env file
+1. Right-click on the python environment and choose 'Insall From requirements.txt'
+1. Right-click on web.py and select 'Set as start-up file'
+
 ## Deploy
+To deploy as an executable that can be run from anywhere:
+1. Right-click on the flowVS project in Solution Explorer
+1. Choose 'Open Command Prompt Here'
+1. Enter the command:
+
+    pyinstaller -n \[NAME\] web.py
+    
+    Where \[NAME\] is what you want the executable to be called.
+1. Once it finishes building, you can find the built project in /flowVS/dist/ under the name you chose.
+1. Copy this whole folder to the location you need, just run the \[NAME\].exe in the folder.
