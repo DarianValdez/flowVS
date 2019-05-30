@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>acc58aa3-2252-4460-91c8-c5ec60f067ec</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>flowVS.py</StartupFile>
+    <StartupFile>web.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="flowVS.py" />
+    <Content Include=".env" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="database.py" />
+    <Compile Include="deps.py" />
+    <Compile Include="graph.py" />
+    <Compile Include="resware_model.py" />
+    <Compile Include="settings.py" />
+    <Compile Include="web.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
