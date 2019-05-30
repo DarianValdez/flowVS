@@ -4,9 +4,9 @@ from dotenv import load_dotenv, find_dotenv
 
 
 def load_dotenv_if_exists(filename):
-    dotenv = find_dotenv(filename)
-    if dotenv != '':
-        load_dotenv(dotenv)
+	dotenv = find_dotenv(filename)
+	if dotenv != '':
+		load_dotenv(dotenv)
 
 
 # If .env.local exists, update os.environ with keys and values from it if they aren't already set
