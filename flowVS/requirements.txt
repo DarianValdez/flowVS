@@ -23,7 +23,7 @@ pycparser==2.18
 pymssql==2.1.4
 PyNaCl==1.2.1
 python-dotenv==0.8.2
-rsa==3.4.2
+rsa==4.1
 six==1.11.0
 sshtunnel==0.1.4
 uritemplate==3.0.0
