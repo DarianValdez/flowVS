@@ -13,10 +13,7 @@ Converts a title insurance workflow from ResWare's db into Graphviz's dot langua
 
 ## Develop
 
-1. Install GraphViz
-1. Update DOT_EXE_PATH in settings.py to point to dot.exe int the Graph Viz installation folder:
-  
-    DOT_EXE_PATH = 'C:\\\\Program Files (x86)\\\\Graphviz2.38\\\\bin\\\\dot.exe'
+1. Install GraphViz, add to system path for all users when prompted
 1. Set variables in the .env file
 1. Right-click on the python environment and choose 'Insall From requirements.txt'
 1. Right-click on web.py and select 'Set as start-up file'
