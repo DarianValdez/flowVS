@@ -29,8 +29,3 @@ To deploy as an executable that can be run from anywhere:
     Where \[NAME\] is what you want the executable to be called.
 1. Once it finishes building, you can find the built project in /flowVS/dist/ under the name you chose.
 1. Copy this whole folder to the location you need, just run the \[NAME\].exe in the folder.
-    
-    You can specify a -id by running \[NAME\].exe from the command line.  When the program starts it will print
-    the ID that it will render on the web page.
-    
-    \[NAME\].exe -id 4
